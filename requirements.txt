@@ -1,0 +1,8 @@
+numpy<2           # mediapipe 0.10.21 needs numpy 1.x
+opencv-python<4.12
+Pillow
+openai-whisper     # automatic captions from speech
+mediapipe==0.10.21   # has the mp.solutions API; newer versions use the Tasks fallback
+# optional segmenters:
+# rembg[cpu]   -> --segmenter rembg
+# torch        -> --segmenter rvm  (Robust Video Matting, GPU recommended)
